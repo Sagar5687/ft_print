@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <login1>.*
+*This project has been created as part of the 42 curriculum by sturuvek.*
 
 # 🖨️ ft_printf
 
@@ -6,7 +6,7 @@
 
 The **ft_printf** project consists of recreating the standard C `printf()` function.
 
-Its objective is to understand how formatted output works internally while learning to use variadic functions and implement different conversion specifiers.
+Its objective is to understand how output is formatted and displayed while learning to use variadic functions and implement different conversion specifiers.
 
 The implementation supports the mandatory conversions required by the 42 subject while reproducing the behavior of the original function as closely as possible.
 
@@ -37,8 +37,6 @@ Through this project, the following concepts are explored:
 - Integer conversion
 - Hexadecimal conversion
 - Pointer formatting
-- Recursive printing
-- Low-level output using `write()`
 
 ---
 
@@ -84,37 +82,49 @@ Hex: ff
 
 ---
 
+# Project Structure
+
+```bash
+.
+├── Makefile
+├── README.md
+├── ft_printf.h
+├── printf.a
+├── ft_*.c
+└── ft_*.o
+```
+
+---
 ## Resources
 
 ### Documentation
 
 - Linux Manual Pages
   - `man 3 printf`
-  - `man 2 write`
   - `man stdarg`
 
 - GNU C Library Documentation
   - https://www.gnu.org/software/libc/manual/
 
-- cppreference
-  - https://en.cppreference.com/
-
-### Tutorials & Articles
-
-- Beej's Guide to C Programming
-- GeeksforGeeks — Variadic Functions in C
-- C Programming Language (Kernighan & Ritchie)
+---
 
 ### AI Usage
 
-AI (ChatGPT) was used as a supplementary learning and review resource.
+AI ( was used as a supplementary learning and review resource.
 
 Specifically, AI was used to:
 
 - Explain how variadic functions (`va_list`, `va_start`, `va_arg`, and `va_end`) operate.
 - Clarify the formatting logic of the standard `printf()` function.
-- Explain hexadecimal and pointer conversions.
-- Review the implementation for correctness and edge cases.
+- Explain pointer conversions and how they are displayed as output.
 - Suggest improvements to memory management and project documentation.
 
 All implementation, debugging, testing, and final code were completed by the author.
+
+---
+
+# Author
+
+## sturuvek(Sagar)
+
+42 School Student
